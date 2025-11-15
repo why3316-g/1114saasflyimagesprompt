@@ -1,5 +1,40 @@
 {
   "github": {
     "silent": true
+  },
+  "buildCommand": "cd apps/nextjs && bun run build",
+  "outputDirectory": "apps/nextjs/.next",
+  "framework": "nextjs",
+  "nodeVersion": "18.x",
+  "installCommand": "bun install",
+  "env": {
+    "NEXT_PUBLIC_APP_URL": "@next_public_app_url",
+    "NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY": "@next_public_clerk_publishable_key",
+    "CLERK_SECRET_KEY": "@clerk_secret_key",
+    "NEXT_PUBLIC_CLERK_SIGN_IN_URL": "/sign-in",
+    "NEXT_PUBLIC_CLERK_SIGN_UP_URL": "/sign-up",
+    "NEXT_PUBLIC_CLERK_AFTER_SIGN_IN_URL": "/dashboard",
+    "NEXT_PUBLIC_CLERK_AFTER_SIGN_UP_URL": "/dashboard",
+    "NEXTAUTH_URL": "@nextauth_url",
+    "NEXTAUTH_SECRET": "@nextauth_secret",
+    "GITHUB_CLIENT_ID": "@github_client_id",
+    "GITHUB_CLIENT_SECRET": "@github_client_secret",
+    "STRIPE_API_KEY": "@stripe_api_key",
+    "STRIPE_WEBHOOK_SECRET": "@stripe_webhook_secret",
+    "RESEND_API_KEY": "@resend_api_key",
+    "RESEND_FROM": "@resend_from",
+    "ADMIN_EMAIL": "@admin_email",
+    "IS_DEBUG": "false",
+    "POSTGRES_URL": "@postgres_url",
+    "NEXT_PUBLIC_STRIPE_STD_PRODUCT_ID": "@next_public_stripe_std_product_id",
+    "NEXT_PUBLIC_STRIPE_STD_MONTHLY_PRICE_ID": "@next_public_stripe_std_monthly_price_id",
+    "NEXT_PUBLIC_STRIPE_PRO_PRODUCT_ID": "@next_public_stripe_pro_product_id",
+    "NEXT_PUBLIC_STRIPE_PRO_MONTHLY_PRICE_ID": "@next_public_stripe_pro_monthly_price_id",
+    "NEXT_PUBLIC_STRIPE_PRO_YEARLY_PRICE_ID": "@next_public_stripe_pro_yearly_price_id",
+    "NEXT_PUBLIC_STRIPE_BUSINESS_PRODUCT_ID": "@next_public_stripe_business_product_id",
+    "NEXT_PUBLIC_STRIPE_BUSINESS_MONTHLY_PRICE_ID": "@next_public_stripe_business_monthly_price_id",
+    "NEXT_PUBLIC_STRIPE_BUSINESS_YEARLY_PRICE_ID": "@next_public_stripe_business_yearly_price_id",
+    "NEXT_PUBLIC_POSTHOG_KEY": "@next_public_posthog_key",
+    "NEXT_PUBLIC_POSTHOG_HOST": "@next_public_posthog_host"
   }
 }
